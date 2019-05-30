@@ -9,15 +9,15 @@ import { User } from '../users';
 })
 export class UserFormComponent {
 
-  languages = ['English', 'Russian',
-            'Ukrainian', 'Polish'];
+ languages = ['English', 'Russian',
+  'Ukrainian', 'Polish'
+ ];
 
-  model: any = {};
-  submitted = false;
+ model: any = {};
+ submitted = false;
 
-  onSubmit() { this.submitted = true;
-  console.log(this.model)  }
-  get diagnostic() { return JSON.stringify(this.model);
-  }
-  
+ onSubmit() {
+  this.submitted = true;
+  console.log(this.model)
+ }
 }
